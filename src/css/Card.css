@@ -1,0 +1,93 @@
+.card--section {
+    padding: 30px 60px;
+    display: flex;
+    gap: 40px;
+    flex: 0 0 auto;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-bottom: 70px;
+
+}
+
+.card--container {
+    background-color: ghostwhite;
+    width: 250px;
+    border-radius: 10px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    position: relative;
+
+
+}
+
+.card--container:hover {
+    box-shadow: 10px 10px 20px rgba(173, 216, 230, 0.45);
+}
+
+.openspots {
+    position: absolute;
+    padding: 4px 5px;
+    background-color: white;
+    border-radius: 4px;
+    font-weight: 450;
+    right: 185px;
+    top: 10px
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 10px 10px;
+}
+
+.card--star {
+    width: 21px;
+    margin-bottom: -2px;
+
+}
+
+.gray {
+    color: #918E9B;
+}
+
+.card--loc--rate--comm {
+    font-size: 17px;
+    font-weight: 450;
+    line-height: 5px;
+
+}
+
+.card--title {
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: -5px;
+}
+
+.card--price {
+    margin-top: -5px;
+}
+
+@media screen and (min-width:640px) {
+    .section--card {
+        margin: 0 30px;
+    }
+
+
+}
+
+@media screen and (min-width:1204px) {
+    .section--card {
+        margin: 0 115px;
+    }
+
+
+}
+
+@media screen and (min-width:1280px) {
+    .section--card {
+        margin: 0 115px;
+    }
+
+
+}
