@@ -2,13 +2,13 @@ import "../css/Header.css";
 import Logo from "../images/huddlenepal.png";
 
 export default function Header() {
-  var btn = document.getElementById("menu-btn");
-  var nav = document.getElementById("menu");
+  const btn = document.getElementById("menu-btn");
+  const nav = document.getElementById("menu");
 
-  // btn.addEventListener("click", function () {
-  //   nav.classList.toggle("flex");
-  //   nav.classList.toggle("hidden");
-  // });
+  btn.addEventListener("click", function () {
+    nav.classList.toggle("flex");
+    nav.classList.toggle("hidden");
+  });
 
   return (
     <div className="header--container">
