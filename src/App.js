@@ -1,17 +1,16 @@
-import './App.css';
-import Header from "./components/Header"
-import Hero from "./components/Hero"
-import Footer from './components/Footer';
-import Cardinfo from './components/Cardinfo'
+import "./App.css";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import Cardinfo from "./components/Cardinfo";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Hero />
       <Cardinfo />
-      <Footer / >
-      
+      <Footer />
     </div>
   );
 }

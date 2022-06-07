@@ -1,48 +1,44 @@
-import "../css/Header.css"
-import Logo from "../images/logo.png"
+import "../css/Header.css";
+import Logo from "../images/huddlenepal.png";
 
 export default function Header() {
+  const btn = document.getElementById("menu-btn");
+  const nav = document.getElementById("menu");
 
+  btn.addEventListener("click", function () {
+    nav.classList.toggle("flex");
+    nav.classList.toggle("hidden");
+  });
 
-    return ( 
-        <div className = "header--container" >
+  return (
+    <div className="header--container">
+      <header>
+        <nav>
+          <img src={Logo} alt="" className="header--logo" />
 
-        <header>
-            <nav>
+          <ul className="nav--menu">
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Contact</li>
+          </ul>
 
-            <img src={Logo} alt="" className="header--logo"/>
+          <div className="nav--toggler" id="menu-btn">
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </nav>
 
-            <ul className="nav--menu">
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Contact</li>
-            </ul>
-
-               <button className= "btn "  id="menu-btn" >
-               <span className="hamburger-top"> </span>
-               <span className="hamburger-mid"></span>
-               <span className="hamburger-bottom"></span>
-               </button>
-              
-
-            </nav>
-
-            <ul className="hamburger--menu hidden" id="menu">
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>About</li>
-                <li>Blogs</li>
-                <li>Contact</li>
-            </ul>
-
-        </header>
-
-    
-   </div>
-    )   
-    
-    
-
+        <ul className="mobile--menu hidden" id="menu">
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Contact</li>
+        </ul>
+      </header>
+    </div>
+  );
 }
