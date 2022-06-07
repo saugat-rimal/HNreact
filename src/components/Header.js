@@ -5,10 +5,10 @@ export default function Header() {
   const btn = document.getElementById("menu-btn");
   const nav = document.getElementById("menu");
 
-  btn.addEventListener("click", function () {
-    nav.classList.toggle("flex");
-    nav.classList.toggle("hidden");
-  });
+  // btn.addEventListener("click", function () {
+  //   nav.classList.toggle("flex");
+  //   nav.classList.toggle("hidden");
+  // });
 
   return (
     <div className="header--container">
