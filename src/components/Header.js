@@ -2,8 +2,8 @@ import "../css/Header.css";
 import Logo from "../images/huddlenepal.png";
 
 export default function Header() {
-  const btn = document.getElementById("menu-btn");
-  const nav = document.getElementById("menu");
+  // const btn = document.getElementById("menu-btn");
+  // const nav = document.getElementById("menu");
 
   // btn.addEventListener("click", function () {
   //   nav.classList.toggle("flex");
